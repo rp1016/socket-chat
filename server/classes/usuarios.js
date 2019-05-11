@@ -51,11 +51,7 @@ class Usuarios {
      * @param {*} sala 
      */
     getPersonasPorSala(sala) {
-
-        let personasEnsala = this.personas.filter(persona => {
-            return persona.sala === sala
-        });
-
+        let personasEnsala = this.personas.filter(persona => persona.sala === sala);
         return personasEnsala;
     }
 
